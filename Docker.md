@@ -423,7 +423,7 @@ docker run后台流程
   交互式方式进行容器并分配伪终端，同时运行/bin/bash命令。退出容器时，无论使用什么命令都不会使容器停止。
 
   ```shell
-  docker -it exec CONTAINER /bin/bash
+  docker exec -it CONTAINER /bin/bash
   ```
 
 - **退出容器**
@@ -747,3 +747,9 @@ https://cloud.tencent.com/developer/article/1657953
 docker常见小问题：
 
 https://stackoverflow.com/questions/37929190/docker-exec-printf-gives-no-such-file-or-directory-error
+
+
+
+
+
+
