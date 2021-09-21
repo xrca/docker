@@ -41,7 +41,7 @@ docker engine是一个C/S应用，主要包含以下几个组成部分
 - REST API用于和server进行交互，操作docker
 - command line interface（CLI）命令行形式与docker进行交互（docker 命令）
 
-<img src="./image/engine-components-flow.png" style="zoom:100%;" />
+<img src="./img/engine-components-flow.png" style="zoom:100%;" />
 
 
 
