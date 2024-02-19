@@ -49,7 +49,7 @@ docker engine是一个C/S应用，主要包含以下几个组成部分
 
 Docker使用了client-server架构，用Docker client连接Docker daemon，来构建、运行并发布你的应用。Docker client和Docker daemon可以运行在同一台电脑上，你也可以连接远程的Docker daemon。Docker client与Docker daemon通过建立在UNIX sockets或网络接口上的REST API进行沟通。
 
-![Docker架构](image/architecture.svg)
+![Docker架构](./img/architecture.svg)
 
 **The Docker daemon**
 
@@ -87,7 +87,7 @@ Docker使用了client-server架构，用Docker client连接Docker daemon，来�
 
 容器是原生的运行在Linux上的，并且和其他容器共享宿主机的内核，它直接一个是独立的进程，不需要其他额外的储存。而虚拟机是一个完整的操作系统，通过hypervisor来获取主机资源。通常虚拟机消耗的资源远超过你的程序消耗的。
 
-<img src="/image/Container.png" style="zoom: 35%;" /><img src="/image/VM.png" style="zoom:35%;" />
+<img src="./img/Container.png" style="zoom: 35%;" /><img src="/image/VM.png" style="zoom:35%;" />
 
 ### 6、Docker安装
 
@@ -173,11 +173,11 @@ sudo systemctl restart docker
 docker run hello-world
 ```
 
-![](/image/docker-run-hello-world.png)
+![](./img/docker-run-hello-world.png)
 
 docker run后台流程
 
-<img src="/image/docker-run.png" style="zoom:80%;" />
+<img src="./img/docker-run.png" style="zoom:80%;" />
 
 
 
@@ -258,7 +258,7 @@ docker run后台流程
   docker image ls
   ```
 
-  ![](/image/docker-images.png)
+  ![](./img/docker-images.png)
 
   含义：
 
@@ -341,7 +341,7 @@ docker run后台流程
 
   登录[Docker Hub](https://hub.docker.com/)，搜索指定镜像指定版本。
 
-  ![](/image/docker-hub.png)
+  ![](./img/docker-hub.png)
 
 ### 4、Docker容器命令
 
@@ -455,7 +455,7 @@ docker run后台流程
   - -f, --force   强力删除，容器正在运行会SIGKILL后删除
   - v, --volumes   删除容器时，同时删除与其关联的数据卷
 
-<img src="/image/docker-rm-v.png" style="zoom: 80%;" />
+<img src="./img/docker-rm-v.png" style="zoom: 80%;" />
 
 - **查看容器信息**
 
@@ -557,7 +557,7 @@ docker run -id --name=c2 --volumes-from c3 centos:7
 docker run -id --name=c1 --volumes-from c3 centos:7
 ```
 
-<img src="/image/docker-run-volumes-from.png" style="zoom:80%;" />
+<img src="./img/docker-run-volumes-from.png" style="zoom:80%;" />
 
 
 
@@ -585,7 +585,7 @@ Linux文件系统由bootfs和rootfs两部分组成：
 
 ### 1、Docker镜像原理
 
-![](/image/docker-image.png)
+![](./img/docker-image.png)
 
 
 
@@ -728,7 +728,7 @@ Linux文件系统由bootfs和rootfs两部分组成：
 
 **Docker命令示意图**
 
-![Docker命令示意图](/image/Docker-Command-Diagram.png)
+![Docker命令示意图](./img/Docker-Command-Diagram.png)
 
 
 
